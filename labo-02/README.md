@@ -18,23 +18,30 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 |-------|---------------------------|-------------------|------------------------|--------|
-|   1   | Green  | | | |
-|   2   | Blue| | | |
-|   3   | Red| | | |
-|   4   | | | | |
-|   5   | | | | |
-|   6   | | | | |
-|   7   | | | | |
-|   8   | | | | |
-|   9   | | | | |
-|   10  | | | | |
+|   1   | Green                     | specifiteit       | Green                  |   ✓    |
+|   2   | Blue                      | specifiteit       | Blue                   |   ✓    |
+|   3   | Blue                      | Volgorde          | Red                    |   X    |
+|   4   | Red                       | Volgorde          | Red                    |   ✓    |
+|   5   | Blue                      | specifiteit       | Blue                   |   ✓    |
+|   6   | Blue                      | specifiteit       | Blue                   |   ✓    |
+|   7   | Black                     | herkomst          | Red                    |   X    |
+|   8   | Blue                      | herkomst          | Blue                   |   ✓    |
+|   9   | Red                       | !Important        | Red                    |   ✓    |
+|   10  | Black                     | herkomst          | Green                  |   X    |
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
+vraag #3    : ik dacht dat de volgorde een hogere prioriteit had dan de specificatie.
+vraag #7    : Ik dacht dat .v7 niet voldoende was om de class aan te spreken en dat deze hierdoor de aanpassing niet ging overnemen en terug naar de default instelling ging gaan.
+vraag #10   : ik dacht dat bij eender welke fout binnen in de opmaak van één item dat deze dan volledig zou genegeerd worden en ook hier dus weer over zou gaan naar de default setting.
 
 ## 4. De nabouw
 
 - Welke selector koos je voor de links in de navigatie, en waarom geen class?
+* nav a
+* omdat de styling voor de links binnen de nav allemaal hetzelfde zijn en deze opzich al een duidelijke specificatie is, toch zeker voor de hoeveelheid links die er maar zitten in de nav.
+
 - Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
+
 
 ## 6. Je site
 

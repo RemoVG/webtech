@@ -1,0 +1,128 @@
+/* zen.css - dezelfde HTML, een ander blad. Alleen om naar te kijken; niets hiervan is opgave. */
+/* 
+papier #fbf7f0 , 
+inkt #2b2b2b , 
+gedempt #6b6b6b , 
+accent #b5451b , 
+zebra #f1e9dc
+koppen in Georgia, 
+tekst in Verdana
+basismaat 16 px; 
+ andere maat is een veelvoud van 0,25 rem
+regelhoogte van de tekst 1,6
+
+Regels: een tokenblok op :root met deze waarden, en verderop alleen var() (syllabus 2.9);
+Selecteer met structuur waar het kan ( nav a , footer p ) en met de classes die er al staan waar het moet.
+Drie properties zoek je zelf op MDN: cursief ( font-style ), vet of juist niet vet ( font-weight , kijk goed
+naar de koppen) en de uitlijning van de footer ( text-align ). Wat niet in het screenshot zit, maak je
+ook niet: witruimte, breedtes en kaders komen volgend hoofdstuk. Het screenshot is genomen in
+een venster van 1280 px breed; lettertypes verschillen licht per besturingssysteem, kleuren en
+verhoudingen niet.
+Tip: begin met body en laat de overerving werken (syllabus 2.6). Wat daarna nog afwijkt van het
+screenshot, is een uitzondering; schrijf er een regel voor. Zit je op een regel die "niet werkt": Stylespaneel,
+doorstreept of afwezig, en de ladder.
+*/
+
+:root {
+  --color-paper: #fbf7f0;
+  --color-ink: #2b2b2b;
+  --color-muted: #6b6b6b;
+  --color-accent: #b5451b;
+  --color-zebra: #f1e9dc;
+  --font-body: Verdana;
+  --font-heading: Georgia;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: var(--color-accent);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-ink);
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--color-muted);
+}
+
+.slogan {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+nav a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--color-ink);
+  text-decoration-line: underline;
+}
+
+ul{
+  list-style: disc;
+}
+
+.intro {
+  font-size: 1.5rem;
+  color: var(--color-ink);
+}
+
+.kaart li:nth-child(odd) {
+  background-color: var(--color-zebra);
+}
+
+.prijs {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+main a {
+  color: var(--color-accent);
+}
+
+main a:hover,
+main a:focus {
+  color: var(--color-paper);
+  background-color: var(--color-accent);
+}
+
+strong {
+  color: var(--color-accent);
+}
+
+footer {
+  color: var(--color-muted);
+  text-align: center;
+}
+
+footer a {
+  color: var(--color-muted);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--color-accent);
+  text-decoration-line: underline;
+}
