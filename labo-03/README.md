@@ -1,10 +1,11 @@
 # Labo 3 - reflecties
 
-Naam: (jouw naam)
+Naam: Remo
 
 ## 1. Kleurenstalen
 
 - Welke twee waarden uit de user agent stylesheet moest je op de lijst wegwerken, en waar las je ze af?
+
 - Wat verandert er aan de banden als je het venster hoger maakt, en wat verandert er niet?
 
 ## 2. Slogan

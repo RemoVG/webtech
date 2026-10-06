@@ -46,7 +46,10 @@ vraag #10   : ik dacht dat bij eender welke fout binnen in de opmaak van één i
 ## 6. Je site
 
 - Welke drie waarden staan in je tokenblok, en waarom die?
+kleuren, letterypes, lettergrootte: Deze waardes worden vaak herhaald op de site, waarbij ik deze hier heb gebundeld en ze dus gemakkelijk hier kan aanpassen moest ik dat willen. ook zijn de benamingen bij de waardes van de kleuren gemakkelijker te lezen dan hun RGB waarde.
+
 - Wat verandert er in je site als je één token wijzigt?
+Dan veranderen alle elementen naar de wijziging die deze token gebruiken als waarde.
 
 ## Thuis: R2.3 (met AI)
 
