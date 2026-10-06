@@ -1,0 +1,35 @@
+:root {
+--pitch-black: #0b0a07ff;
+--celadon: #bbcea8ff;
+--light-gold: #e3d87eff;
+--canary-yellow: #f0ec57ff;
+--dusty-olive: #748067ff;
+--font-body: Verdana;
+--font-size: 1rem;
+}
+
+body{
+    background-color: var(--pitch-black);
+    color: var(--celadon);
+    font-family: var(--font-body);
+
+}
+
+main ul li{
+    color: var(--dusty-olive);
+}
+
+nav a{
+    color: var(--light-gold);
+    text-decoration: none;
+
+}
+nav a:hover,
+nav a :focus {
+    color: var(--canary-yellow);
+    text-decoration-line: underline;
+}
+
+h2{
+    color: var(--canary-yellow);
+}
