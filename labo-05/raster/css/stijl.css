@@ -1,0 +1,61 @@
+/* stijl.css - labo 5, raster (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --kleur-vlakA: #e9493f;
+    --kleur-vlakB: #edd24a;
+    --kleur-vlakC: #072f55; 
+    --kleur-vlakD: #52a51a;
+    --kleur-vlakE: #efaad9;
+    --kleur-vlakF: #a5f129;
+    --kleur-vlakG: #ebc47a;
+    --kleur-vlakH:#e8882c;
+}
+
+/* === your rules === */
+
+main {
+    height: 100vh;
+    display: grid;
+    margin: 1rem;
+    gap: 1rem;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.vlak{
+    text-align: right;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0.5rem;
+    padding-right: 0.75rem;
+
+}
+
+.a{
+    background-color: var(--kleur-vlakA);
+}
+.b{
+    background-color: var(--kleur-vlakB);
+    
+}
+.c{
+    background-color: var(--kleur-vlakC);
+}
+.d{
+    background-color: var(--kleur-vlakD);
+}
+.e{
+    background-color: var(--kleur-vlakE);
+}
+.f{
+    background-color: var(--kleur-vlakF);
+}
+.g{
+    background-color: var(--kleur-vlakG);
+}
+.h{
+    background-color: var(--kleur-vlakH);
+}
+.b, .h{
+    grid-column: 4;
+}
