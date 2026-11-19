@@ -2,47 +2,46 @@
 
 /* === tokens === */
 :root {
-    --vierkant-kleur: #ec4b03;
-    --circkel-kleur: #b99ec1;
-    --binnen-vierkant-kleur: #f9b700;
+  --vierkant-kleur: #ec4b03;
+  --circkel-kleur: #b99ec1;
+  --binnen-vierkant-kleur: #f9b700;
 }
 
 /* === your rules === */
 
-body{
-    background-color: white;
-    padding: 2rem 5rem;
+body {
+  background-color: white;
+  padding: 2rem 5rem;
 }
 
-main{
-    border: 0.75rem solid black ;
-    height: 90vh;
-    width: 90vh;
-    margin-top: 5vh;
-    padding: 5rem;
-    background-color: var(--vierkant-kleur);
-
+main {
+  border: 0.75rem solid black;
+  height: 90vh;
+  width: 90vh;
+  margin-top: 5vh;
+  padding: 5rem;
+  background-color: var(--vierkant-kleur);
 }
 
-div{
-    height: 100%;
-    width: 100%;
-    border: 0.75rem solid black;
-    border-radius: 100% ;
-    background-color: var(--circkel-kleur);
-    overflow: hidden;
+div {
+  height: 100%;
+  width: 100%;
+  border: 0.75rem solid black;
+  border-radius: 100%;
+  background-color: var(--circkel-kleur);
+  overflow: hidden;
 }
 
-h1{
-    font-family: Georgia, serif;
-    font-weight: bold;
-    text-align: right;
-    border: 0.75rem solid black ;
-    height: 100%;
-    width: 100%;
-    padding-top: 450px;
-    padding-right: 2rem;
-    background-color: var(--binnen-vierkant-kleur);
-    margin-left: -20rem;
-    margin-top: -20rem;
+h1 {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  text-align: right;
+  border: 0.75rem solid black;
+  height: 100%;
+  width: 100%;
+  padding-top: 450px;
+  padding-right: 2rem;
+  background-color: var(--binnen-vierkant-kleur);
+  margin-left: -20rem;
+  margin-top: -20rem;
 }

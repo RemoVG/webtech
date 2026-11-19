@@ -1,0 +1,94 @@
+/* stijl.css - labo 6, dashboard (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --titel: #1f2933;
+  --papier: #f3f1ec;
+  --grafie: #2c6e8f;
+  --omzet: #c8742e;
+  --bezoekers: #3b7a2a;
+  --agenda: #6b4fa3;
+  --taken: #b2323a;
+  --weer: #e0b43a;
+  --tekst-light: #fff;
+  --tekst-dark: #1f2933;
+}
+
+/* === base: narrow screens first === */
+.titel {
+  background-color: var(--titel);
+  font-size: 1.5rem;
+}
+.grafiek {
+  background-color: var(--grafie);
+}
+.omzet {
+  background-color: var(--omzet);
+}
+.bezoekers {
+  background-color: var(--bezoekers);
+}
+.agenda {
+  background-color: var(--agenda);
+}
+.taken {
+  background-color: var(--taken);
+}
+.weer {
+  background-color: var(--weer);
+  color: var(--tekst-dark);
+}
+
+/* === media queries: below the base rules === */
+main.dashboard {
+  display: grid;
+  height: 98vh;
+  gap: 1rem;
+}
+body {
+  background-color: var(--titel);
+  padding: 1vh;
+  color: var(--tekst-light);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+}
+.tegel {
+  border-radius: 0.7rem;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  main.dashboard {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  .titel,
+  .grafiek,
+  .weer {
+    grid-column: 1/-1;
+  }
+  .tegel {
+    min-height: 8rem;
+  }
+}
+@media (min-width: 1200px) {
+  main.dashboard {
+    grid-template-columns: repeat(4, 1fr);
+    height: 98vh;
+  }
+  .titel,
+  .weer {
+    grid-column: 1/-1;
+  }
+  .grafiek {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .agenda {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .tegel {
+    min-height: 6rem;
+  }
+}
